@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Admin Password</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Password for: <%= username %></h1>
+        <nav>
+          <ul>
+            <li><a href="/v3r1_S3cr3t_adm1n_pag3">Admin Dashboard</a></li>
+            <li><a href="/logout">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h2>Password Hash for <%= username %></h2>
+        <% if (password) { %>
+          <p><%= password %></p>
+        <% } else { %>
+          <p>No password found for user <%= username %></p>
+        <% } %>
+      </div>
+    </main>
+  </body>
+</html>

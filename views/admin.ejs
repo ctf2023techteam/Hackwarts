@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hackwarts Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/admin.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <h1>Hackwarts Administration</h1>
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <% if (user) { %>
+                <li><a href="/logout">Logout</a></li>
+              <% } else { %>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+              <% } %>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <h2 style="text-align:center;">Admin Dashboard</h2>
+          <% if (users.length > 0) { %>
+            <table>
+              <thead>
+                <tr>
+                  <th>Username</th>
+                  <th>Password Hash</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% users.forEach((user, index) => { %>
+                  <tr <%= index % 2 == 0 ? "class='even'" : "class='odd'" %>>
+                    <td><%= user.username %></td>
+                    <td><a href="/users/<%= user.username %>/password">Click here to see password hash</a></td>
+                  </tr>
+                <% }) %>
+              </tbody>
+            </table>
+          <% } else { %>
+            <p>No users found</p>
+          <% } %>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Hackwarts School of Cybersecurity and Hacking</p>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

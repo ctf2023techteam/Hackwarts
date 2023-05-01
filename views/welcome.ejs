@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Welcome, <%= username %></title>
+    <link rel="stylesheet" href="/css/welcome.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <h1>Hackwarts Welcome</h1>
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/logout">Logout</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+          <div class="container">
+            <h2 class="text">Welcome to the Hackwarts, <%= username %>!</h2>
+            <h2 style="text-align: center;">School of Cybersecurity and Hacking</h2>
+            <div class="letter">
+              <p class="top-centered-text" style="margin-top: 12em; text-align: left;">
+                Dear <%= username %>,
+              </p>
+              <p class="top-centered-text" style="margin-top: 20px;">
+                We are pleased to inform you that you have been accepted to Hackwarts, the School of Cybersecurity and Hacking. Congratulations! You are about to embark on an exciting journey that will lead you to become one of the most skilled and sought-after cybersecurity experts in the wizarding world.
+              </p>
+              <p class="top-centered-text" style="margin-top: 20px;">
+                As a student of Hackwarts, you will learn the most advanced hacking techniques and cybersecurity strategies that will enable you to protect computer systems and networks from cyber attacks. You will have the opportunity to study under some of the greatest minds in cybersecurity, who will teach you how to use your skills for good and defend against the dark arts of hacking.
+              </p>
+              <p class="top-centered-text" style="margin-top: 20px;">
+                We look forward to seeing you on campus and helping you unlock your full potential as a hacker and cybersecurity expert. Get ready to join a community of like-minded individuals who are passionate about the same things as you and dedicated to making the wizarding world a safer place for everyone.
+              </p>
+              <p class="top-centered-text" style="margin-top: 20px; margin-bottom: 30px; text-align: right;">
+                Yours sincerely,<br>
+                Professor Minerva McFirewall<br>
+                Deputy Headmistress
+              </p>
+            </div>
+          </div>
+      </main>
+    </div>
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Hackwarts School of Cybersecurity and Hacking</p>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="/js/jwt_decode.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <h1>Hogwarts Application</h1>
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/register">Register</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="content-container">
+        <div class="login-container">
+          <h2>Login</h2>
+          <form id="login-form" action="/login" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Login">
+          </form>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Hackwarts School of Cybersecurity and Hacking</p>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

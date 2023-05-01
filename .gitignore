@@ -1,0 +1,5 @@
+Dockerfile
+mydatabase.db
+package-lock.json
+package.json
+startup.sh

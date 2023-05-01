@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hogwarts Registration</title>
+    <link rel="stylesheet" href="/css/register.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <h1>Hogwarts Registration</h1>
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/login">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="content-container">
+        <div class="register-container">
+          <h2>Register</h2>
+          <form method="POST" action="/register">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <input type="submit" value="Register">
+          </form>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Hackwarts School of Cybersecurity and Hacking</p>
+      </div>
+    </footer>
+  </body>
+</html>
